@@ -1,0 +1,77 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark elegant-color scrolling-navbar intro-fixed-nav"
+    [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="#"><strong>@KDHTTPS</strong></a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Blog</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view">
+    <div class="full-bg-img">
+      <div class="mask rgba-stylish-strong flex-center">
+        <div class="container text-center white-text">
+          <div class="white-text text-center wow fadeInUp">
+            <h1>Kiran D. Mali <mdb-icon fas icon="bolt" size="1x" class="amber-text" aria-hidden="true"></mdb-icon>
+            </h1>
+            <h3>Full Stack Software Developer <mdb-icon fas icon="laptop" size="1x" class="blue-text"
+                aria-hidden="true"></mdb-icon> - OpenID Connect OAuth 2.0 <mdb-icon fas icon="shield-alt" size="1x"
+                class="amber-text" aria-hidden="true"></mdb-icon>
+            </h3>
+            <br>
+            <h4>Love programming <mdb-icon fas icon="heart" size="1x" class="red-text" aria-hidden="true"></mdb-icon> ,
+              Like to play with new ideas <mdb-icon fas icon="lightbulb" size="1x" class="amber-text"
+                aria-hidden="true"></mdb-icon> , to do new things <mdb-icon fas icon="play-circle" size="1x"
+                class="green-text" aria-hidden="true"></mdb-icon>, explaining things in a very easy
+              way <mdb-icon fas icon="balance-scale" size="1x" class="amber-text" aria-hidden="true"></mdb-icon> ,
+              simplify the work <mdb-icon fas icon="cogs" size="1x" class="red-text" aria-hidden="true"></mdb-icon> and
+              love to help people <mdb-icon fas icon="users" size="1x" class="purple-text" aria-hidden="true">
+              </mdb-icon>.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Layout-->
+<main class="text-center py-5">
+
+  <div class="container">
+    <!-- Vertical Steppers -->
+    <div class="row">
+      <h1>Experience</h1>
+      <div class="col-md-12">
+        <!-- Stepers Wrapper -->
+        <ul class="stepper stepper-vertical">
+          <!-- First Step -->
+          <li class="completed" *ngFor="let ex of experience; let i = index">
+            <a href="#!">
+              <span class="circle">{{i+1}}</span>
+              <h4 class="label">{{ex.title}}</h4>
+            </a>
+            <div class="step-content lighten-3">
+              <h5>{{ex.descTitle}}</h5>
+              
+              <a href="#" *ngFor="let de of ex.descs" class="list-group-item list-group-item-action flex-column align-items-start">
+                <p class="mb-1"><mdb-icon fas icon="circle" class="blue-grey-text" aria-hidden="true"></mdb-icon> {{de}}</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- /.Stepers Wrapper -->
+      </div>
+    </div>
+  </div>
+
+</main>
+<!--Main Layout-->
