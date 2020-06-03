@@ -1,5 +1,5 @@
 <!-- Profile and Banner -->
-<div class="view">
+<div class="view view-banner">
   <div class="full-bg-img">
     <div class="mask rgba-stylish-strong flex-center">
       <div class="container text-center white-text">
@@ -10,12 +10,14 @@
           <h1 class="h1-responsive">Kiran D. Mali <mdb-icon fas icon="bolt" size="1x" class="amber-text"
               aria-hidden="true"></mdb-icon>
           </h1>
-          <h3 class="h3-responsive">Full Stack Software Developer <mdb-icon fas icon="laptop" size="1x" class="blue-text" aria-hidden="true">
+          <h3 class="h3-responsive">Full Stack Software Developer <mdb-icon fas icon="laptop" size="1x"
+              class="blue-text" aria-hidden="true">
             </mdb-icon> - OpenID Connect OAuth 2.0 <mdb-icon fas icon="shield-alt" size="1x" class="amber-text"
               aria-hidden="true"></mdb-icon>
           </h3>
           <br>
-          <h4 class="h4-responsive">Love programming <mdb-icon fas icon="heart" size="1x" class="red-text" aria-hidden="true"></mdb-icon> ,
+          <h4 class="h4-responsive">Love programming <mdb-icon fas icon="heart" size="1x" class="red-text"
+              aria-hidden="true"></mdb-icon> ,
             Like to play with new ideas <mdb-icon fas icon="lightbulb" size="1x" class="amber-text" aria-hidden="true">
             </mdb-icon> , to do new things <mdb-icon fas icon="play-circle" size="1x" class="green-text"
               aria-hidden="true"></mdb-icon>, explaining things in a very easy
@@ -41,7 +43,7 @@
           Experience
         </h1>
         <!-- Stepers Wrapper -->
-        <ul class="stepper stepper-vertical">
+        <ul class="stepper stepper-vertical mr-0rem">
           <!-- First Step -->
           <li class="completed" *ngFor="let ex of experience; let i = index">
             <a href="#!" class="pb-0">
@@ -66,6 +68,101 @@
           </li>
         </ul>
         <!-- /.Stepers Wrapper -->
+      </div>
+      <hr />
+      <!-- Language known -->
+      <div class="col-md-12">
+        <h1>
+          <mdb-icon fab icon="stack-overflow" size="1x" class="red-text" aria-hidden="true"></mdb-icon>
+          Skills
+        </h1>
+        <div class="row">
+          <div class="col-md-4">
+            <!--Card-->
+            <mdb-card cascade="true">
+
+              <!--Card image-->
+              <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+                <mdb-card-img src="assets/angular.jpg"></mdb-card-img>
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--/Card image-->
+
+              <mdb-card-body cascade="true" class="text-center">
+                <!--Card content-->
+                <h4 class="card-title">
+                  <strong>Angular</strong>
+                </h4>
+                <mdb-card-text>
+                  Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam.
+                </mdb-card-text>
+
+                <!--Facebook-->
+                <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook-f"></mdb-icon>
+                </a>
+                <!--Twitter-->
+                <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
+                  <mdb-icon fab icon="twitter"></mdb-icon>
+                </a>
+                <!--Google +-->
+                <a type="button" mdbBtn floating="true" size="sm" color="dribbble" class="waves-light" mdbWavesEffect>
+                  <mdb-icon fab icon="dribbble"></mdb-icon>
+                </a>
+
+              </mdb-card-body>
+              <!--/.Card content-->
+
+            </mdb-card>
+            <!--/.Card-->
+          </div>
+
+          <div class="col-md-4">
+            <!--Card-->
+            <mdb-card cascade="true">
+
+              <!--Card image-->
+              <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+                <mdb-card-img src="assets/nodejs.jpg"></mdb-card-img>
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--/Card image-->
+
+              <mdb-card-body cascade="true" class="text-center">
+                <!--Card content-->
+                <h4 class="card-title">
+                  <strong>Node JS</strong>
+                </h4>
+                <mdb-card-text>
+                  Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam.
+                </mdb-card-text>
+
+                <!--Facebook-->
+                <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook-f"></mdb-icon>
+                </a>
+                <!--Twitter-->
+                <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
+                  <mdb-icon fab icon="twitter"></mdb-icon>
+                </a>
+                <!--Google +-->
+                <a type="button" mdbBtn floating="true" size="sm" color="dribbble" class="waves-light" mdbWavesEffect>
+                  <mdb-icon fab icon="dribbble"></mdb-icon>
+                </a>
+
+              </mdb-card-body>
+              <!--/.Card content-->
+
+            </mdb-card>
+            <!--/.Card-->
+          </div>
+        </div>
       </div>
     </div>
   </div>
