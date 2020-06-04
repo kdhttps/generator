@@ -77,13 +77,13 @@
           Skills
         </h1>
         <div class="row">
-          <div class="col-md-4">
+
+          <div *ngFor="let skill of skills; let i = index" class="col-md-4 mt-3">
             <!--Card-->
             <mdb-card cascade="true">
-
               <!--Card image-->
               <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-                <mdb-card-img src="assets/angular.jpg"></mdb-card-img>
+                <mdb-card-img src="assets/{{skill.image}}"></mdb-card-img>
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -93,75 +93,17 @@
               <mdb-card-body cascade="true" class="text-center">
                 <!--Card content-->
                 <h4 class="card-title">
-                  <strong>Angular</strong>
+                  <strong>{{skill.title}}</strong>
                 </h4>
                 <mdb-card-text>
-                  Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam.
+                  {{skill.description}}
                 </mdb-card-text>
-
-                <!--Facebook-->
-                <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
-                  <mdb-icon fab icon="facebook-f"></mdb-icon>
-                </a>
-                <!--Twitter-->
-                <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
-                  <mdb-icon fab icon="twitter"></mdb-icon>
-                </a>
-                <!--Google +-->
-                <a type="button" mdbBtn floating="true" size="sm" color="dribbble" class="waves-light" mdbWavesEffect>
-                  <mdb-icon fab icon="dribbble"></mdb-icon>
-                </a>
-
               </mdb-card-body>
               <!--/.Card content-->
-
             </mdb-card>
             <!--/.Card-->
           </div>
 
-          <div class="col-md-4">
-            <!--Card-->
-            <mdb-card cascade="true">
-
-              <!--Card image-->
-              <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-                <mdb-card-img src="assets/nodejs.jpg"></mdb-card-img>
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--/Card image-->
-
-              <mdb-card-body cascade="true" class="text-center">
-                <!--Card content-->
-                <h4 class="card-title">
-                  <strong>Node JS</strong>
-                </h4>
-                <mdb-card-text>
-                  Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam.
-                </mdb-card-text>
-
-                <!--Facebook-->
-                <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
-                  <mdb-icon fab icon="facebook-f"></mdb-icon>
-                </a>
-                <!--Twitter-->
-                <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
-                  <mdb-icon fab icon="twitter"></mdb-icon>
-                </a>
-                <!--Google +-->
-                <a type="button" mdbBtn floating="true" size="sm" color="dribbble" class="waves-light" mdbWavesEffect>
-                  <mdb-icon fab icon="dribbble"></mdb-icon>
-                </a>
-
-              </mdb-card-body>
-              <!--/.Card content-->
-
-            </mdb-card>
-            <!--/.Card-->
-          </div>
         </div>
       </div>
     </div>

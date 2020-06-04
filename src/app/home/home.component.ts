@@ -88,7 +88,33 @@ export class HomeComponent implements OnInit {
       'learned and Made a Single Page Application(SPA) Shopping Site in Angular JS.',
     ]
   }];
-  
+
+  skills = [{
+    title: 'Node JS',
+    image: 'nodejs.jpg',
+    description: `Working on Node.js from starting of my profession career. In every project worked on Node.JS. Made a libraries and published on NPM.`
+  }, {
+    title: 'OpenID Connect OAuth 2.0',
+    image: 'oauth20.jpg',
+    description: `I've mostly worked on web security with OpenID Connect and OAuth 2.0 Concepts. Integrated AppAuth.JS with all the Single Page Applications(SPA).`
+  }, {
+    title: 'Angular - React',
+    image: 'angular-react.jpg',
+    description: `Integrated AppAuth JS with Angular and React. Developed security management console in Angular. Develop a admin console with firebase, react and redux.`
+  }, {
+    title: 'Lua',
+    image: 'lua.jpg',
+    description: `Worked with prowerfull Kong Proxy middleware and developed the OAuth JWT Verification and security plugins in LUA.`
+  }, {
+    title: 'Docker',
+    image: 'docker.jpg',
+    description: `Made a docker images for projects with High availability and cluster setup. Worked on docker images for Node.js, angular and Lua projects.`
+  }, {
+    title: 'CI/CD',
+    image: 'cicd.jpg',
+    description: `Integrated the CI/CD module for projects with differents platforms as per requirments and needs. Worked on Heroku, Github and Heroku for CI/CD. Written a script and configured the pipeline.`
+  }];
+
   constructor() { }
 
   ngOnInit(): void {
