@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit {
   skills = [{
     title: 'Node JS',
     image: 'nodejs.jpg',
-    description: `Working on Node.js from starting of my profession career. In every project worked on Node.JS. Made a libraries and published on NPM.`
+    description: `Working on Node.js from starting of my professional career. In every project worked on Node.JS. Made a libraries and published on NPM.`
   }, {
     title: 'OpenID Connect OAuth 2.0',
     image: 'oauth20.jpg',
