@@ -11,4 +11,4 @@ git config user.email kdhttps@gmail.com
 git add -A
 git commit -m 'deploy'
 
-git push -f https://kdhttps:${GITHUB_TOKEN}@github.com/kdhttps/kdhttps.github.io.git
+git push --set-upstream -f https://kdhttps:${GITHUB_TOKEN}@github.com/kdhttps/kdhttps.github.io.git master
