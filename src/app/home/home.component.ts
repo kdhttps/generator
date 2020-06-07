@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   experience = [{
-    title: 'Software Engineer',
+    title: 'Full Stack Software Engineer',
     employmentType: 'Full-time',
     company: '',
     location: '',
@@ -104,7 +104,7 @@ export class HomeComponent implements OnInit {
   }, {
     title: 'Lua',
     image: 'lua.jpg',
-    description: `Worked with prowerfull Kong Proxy middleware and developed the OAuth JWT Verification and security plugins in LUA.`
+    description: `Working on Lua to develop a Kong plugins. Kong is a prowerfull Proxy middleware. Developed the OAuth JWT Verification and security plugins in LUA.`
   }, {
     title: 'Docker',
     image: 'docker.jpg',
@@ -113,6 +113,22 @@ export class HomeComponent implements OnInit {
     title: 'CI/CD',
     image: 'cicd.jpg',
     description: `Integrated the CI/CD module for projects with differents platforms as per requirments and needs. Worked on Heroku, Github and Heroku for CI/CD. Written a script and configured the pipeline.`
+  }];
+
+  education = [{
+    title: 'Master of Science in Informatin and Communication Technolog - IT',
+    college: 'Veer Narmad South Gujarat University',
+    startDate: 'June, 2015',
+    endDate: 'July, 2017',
+    cgpa: '9.5 / 10 CGPA',
+    description: 'Finished master with MSC.ICT from J. P. Dawar Master of Science in Information and Communication Technology College, VNSGU University, Vesu, Surat, India.',
+  }, {
+    title: 'Bachelor of Computer Application - Computer Science',
+    college: 'Veer Narmad South Gujarat University',
+    startDate: 'June, 2012',
+    endDate: 'March, 2015',
+    cgpa: '8.10 / 10 CGPA',
+    description: 'Completed Bachelor of Computer Application from Dhansukhbhai Balabhai Patel (DRB) College, VNSGU University, Bharthana, Vesu.',
   }];
 
   constructor() { }

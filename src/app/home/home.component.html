@@ -35,8 +35,8 @@
 
 <main class="py-5">
   <div class="container-fluid">
-    <!-- Vertical Steppers -->
     <div class="row">
+      <!-- experience -->
       <div class="col-md-12">
         <h1>
           <mdb-icon fas icon="address-card" size="1x" class="red-text" aria-hidden="true"></mdb-icon>
@@ -69,8 +69,8 @@
         </ul>
         <!-- /.Stepers Wrapper -->
       </div>
-      <hr />
-      <!-- Language known -->
+
+      <!-- skills -->
       <div class="col-md-12">
         <h1>
           <mdb-icon fab icon="stack-overflow" size="1x" class="red-text" aria-hidden="true"></mdb-icon>
@@ -105,6 +105,39 @@
           </div>
 
         </div>
+      </div>
+
+      <!-- education -->
+      <div class="col-md-12 mt-5">
+        <h1>
+          <mdb-icon fas icon="address-card" size="1x" class="red-text" aria-hidden="true"></mdb-icon>
+          Education
+        </h1>
+        <!-- Stepers Wrapper -->
+        <ul class="stepper stepper-vertical mr-0rem">
+          <!-- First Step -->
+          <li class="completed" *ngFor="let edu of education; let i = index">
+            <a href="#!" class="pb-0">
+              <span class="circle">{{i+1}}</span>
+              <h4 class="label">{{edu.title}}</h4>
+            </a>
+            <div class="step-content lighten-3">
+              <h5>
+                <mdb-icon fas icon="university" size="1x" class="green-text" aria-hidden="true">
+                </mdb-icon>
+                {{edu.college}}
+              </h5>
+              <h6 class="label grey-text">
+                <mdb-icon fas icon="calendar-alt" size="1x" class="red-text" aria-hidden="true"></mdb-icon>
+                {{edu.startDate}}-{{edu.endDate}}
+              </h6>
+              <h6>
+                {{edu.description}}
+              </h6>
+            </div>
+          </li>
+        </ul>
+        <!-- /.Stepers Wrapper -->
       </div>
     </div>
   </div>

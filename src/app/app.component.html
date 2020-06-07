@@ -7,10 +7,18 @@
     <links>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active waves-light" mdbWavesEffect>
-          <a class="nav-link" routerLink="/" [routerLinkActive]="'active'">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/" [routerLinkActive]="'active'">Home <span
+              class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" routerLink="/blog" [routerLinkActive]="'active'">Blog</a>
+          <a class="nav-link" routerLink="/blog" [routerLinkActive]="'active'">Blogs</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item" *ngFor="let social of socialNetwork">
+          <a class="nav-link" href="{{social.href}}" target="_blank" rel="noopener noreferrer">
+            <mdb-icon fab icon="{{social.icon}}"></mdb-icon>
+          </a>
         </li>
       </ul>
     </links>
@@ -18,3 +26,30 @@
 </header>
 
 <router-outlet></router-outlet>
+
+<footer class="page-footer font-small grey darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center text-center">
+
+          <a class="tw-ic" *ngFor="let social of socialNetwork" href="{{social.href}}" rel="noopener noreferrer"
+            target="_blank">
+            <mdb-icon fab icon="{{social.icon}}" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://kdhttps.github.io"> https://kdhttps.github.io</a>
+  </div>
+</footer>
