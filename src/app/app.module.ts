@@ -10,6 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { CustomMetaService } from './meta.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { BlogComponent } from './blog/blog.component';
     MDBBootstrapModule.forRoot(),
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    CustomMetaService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

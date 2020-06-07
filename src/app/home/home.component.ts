@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomMetaService } from '../meta.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   experience = [{
-    title: 'Full Stack Software Engineer',
+    title: 'Full Stack Software Developer',
     employmentType: 'Full-time',
     company: '',
     location: '',
@@ -26,7 +27,7 @@ export class HomeComponent implements OnInit {
       'Code maintenance and support for NodeJS, Angular, React and Vue libs',
     ],
   }, {
-    title: 'Software Engineer',
+    title: 'Software Developer',
     employmentType: 'Full-time',
     company: '',
     location: '',
@@ -131,9 +132,13 @@ export class HomeComponent implements OnInit {
     description: 'Completed Bachelor of Computer Application from Dhansukhbhai Balabhai Patel (DRB) College, VNSGU University, Bharthana, Vesu.',
   }];
 
-  constructor() { }
+  constructor(
+    private customMetaService: CustomMetaService,
+  ) { }
 
   ngOnInit(): void {
+    const title = 'Kiran Mali - Full Stack Software Developer';
+    this.customMetaService.setTitle(title);
+    this.customMetaService.setSocialMediaTags('https://kdhttps.github.io', title, 'Love programming, Like to play with new ideas, to do new things, explaining things in a very easy way, simplify the work and love to help people .', 'twitter-image.png');
   }
-
 }
