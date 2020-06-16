@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomMetaService } from '../meta.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { CustomMetaService } from '../meta.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  assetsURL = environment.assetsURL;
+  
   experience = [{
     title: 'Full Stack Software Developer',
     employmentType: 'Full-time',
